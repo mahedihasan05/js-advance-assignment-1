@@ -5,23 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do App</title>
   <link href="/src/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-[#00021d] flex items-center justify-center h-screen">
   <!-- To Do App -->
-   <div class="bg-[#53a5a8] w-[40%] p-8 mx-auto rounded-[16px]">
-      <h1 class="text-center text-3xl font-bold mb-9">ToDo List!</h1>
+   <div class="bg-teal-500 p-6 rounded-xl w-full max-w-md shadow-lg">
+    <h2 class="text-center text-2xl font-bold text-black mb-4">ToDo List!</h2>
 
-      <form action="" class="flex gap-1">
-        <input type="text" name="" id="text" placeholder="Add your new ToDO..." class="bg-white w-full p-3 rounded outline-none">
-        <button id="btnAdd" class="bg-[#8b5ec6] px-4 py-2 rounded text-white">Add</button>
-      </form>
-      <div id="">
-        <input type="text" id="list">
-        <button id="btnEdit" class="bg-[#ebd316] px-4 py-2 rounded text-white"></button>
-        <button id="btnRemove" class="bg-[#dc3545] px-4 py-2 rounded text-white"></button>
-      </div>
-   </div>
+    <div class="flex gap-2 mb-4">
+      <input id="todo-input" type="text" placeholder="Add your new ToDo..." 
+             class="flex-1 p-2 rounded-md outline-none bg-white"/>
+      <button id="add-btn" 
+              class="bg-[#8b5ec6] text-white px-4 py-2 rounded-md text-xl">+</button>
+    </div>
 
+    <ul id="todo-list" class="space-y-2"></ul>
+  </div>
 
 
 
