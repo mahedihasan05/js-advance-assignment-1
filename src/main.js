@@ -21,7 +21,7 @@ addBtn.addEventListener("click", () => {
 
   const completeBtn = document.createElement("button");
   completeBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
-  completeBtn.className = "bg-green-600 text-white px-2 py-1 rounded-md";
+  completeBtn.className = "bg-[#28a745] text-white px-2 py-1 rounded-md";
   completeBtn.onclick = () => span.classList.toggle("line-through");
 
   const editBtn = document.createElement("button");
