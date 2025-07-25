@@ -20,12 +20,12 @@ addBtn.addEventListener("click", () => {
   buttonGroup.className = "flex gap-2";
 
   const completeBtn = document.createElement("button");
-  completeBtn.innerHTML = "✔️";
+  completeBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
   completeBtn.className = "bg-green-600 text-white px-2 py-1 rounded-md";
   completeBtn.onclick = () => span.classList.toggle("line-through");
 
   const editBtn = document.createElement("button");
-  editBtn.innerHTML = "✏️";
+  editBtn.innerHTML = '<i class="fa-solid fa-pencil"></i>';
   editBtn.className = "bg-[#ebd316] text-white px-2 py-1 rounded-md";
   editBtn.onclick = () => {
     const newText = prompt("Edit your ToDo:", span.textContent);
